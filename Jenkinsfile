@@ -15,13 +15,13 @@ pipeline {
 
                 stage('Frontend Check') {
                     steps {
-                        bat 'bat '"C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" frontend_check.py''
+                        bat ' "C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" frontend_check.py'
                     }
                 }
 
                 stage('Backend Check') {
                     steps {
-                        bat 'bat '"C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" backend_check.py''
+                        bat '"C:\\Users\\admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" backend_check.py'
                     }
                 }
             }
